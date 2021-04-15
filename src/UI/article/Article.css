@@ -1,0 +1,41 @@
+.article {
+	width: 1004px;
+	height: 148px;
+	border: 0.1px black solid;
+}
+.article-image {
+	width: 260px;
+	max-width: 260px;
+	height: 148px;
+}
+.article-content {
+	width: 700px;
+	height: 148px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+}
+.article-prix {
+	height: 148px;
+	width: 100px;
+	padding-top: 1rem;
+}
+.article-total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 48px;
+	font-size: 16px;
+	color: #6a6f73;
+}
+.article-titre {
+	color: #1c1d1f;
+}
+.article-decription {
+	color: #1c1d1f;
+	font-size: 14px;
+}
+.article-user {
+	color: #1c1d1f;
+	font-size: 12px;
+}

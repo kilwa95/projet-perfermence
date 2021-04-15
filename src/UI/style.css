@@ -25,3 +25,9 @@
 .mr-2 {
 	margin-right: 2rem;
 }
+.container {
+	padding-right: 72px;
+	padding-left: 45px;
+	margin-right: auto;
+	margin-left: auto;
+}

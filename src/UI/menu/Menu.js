@@ -11,11 +11,7 @@ const Menu = (props) => {
 				<div className="mr-2 menu-lien">covid</div>
 				<div className=" menu-lien">Sport</div>
 			</div>
-			{/* <div>Home</div>
-			<div>Covid</div>
-			<div>Sport</div> */}
 		</div>
 	);
 };
-
 export default Menu;
