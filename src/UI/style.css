@@ -1,0 +1,27 @@
+.d-flex {
+	display: flex !important;
+	flex-direction: row;
+}
+.justify-content-space-evenly {
+	justify-content: space-evenly;
+}
+.justify-content-space-between {
+	justify-content: space-between;
+}
+.justify-content-space-around {
+	justify-content: space-around;
+}
+
+.mw-70 {
+	min-width: 70%;
+}
+.mw-100 {
+	min-width: 100%;
+}
+
+.mr-1 {
+	margin-right: 1rem;
+}
+.mr-2 {
+	margin-right: 2rem;
+}
