@@ -5,12 +5,15 @@ import '../style.css';
 const Menu = (props) => {
 	return (
 		<div className="menu">
-			<div>BLOG</div>
-			<div className="d-flex justify-content-space-between ">
-				<div className="mr-2 menu-lien">Home</div>
-				<div className="mr-2 menu-lien">covid</div>
-				<div className=" menu-lien">Sport</div>
+			<div>
+				<img src="https://secure.meetupstatic.com/photos/event/5/3/2/600_484801330.jpeg" width="90" />
 			</div>
+			<div>
+				<input className="menu-input" placeholder="Rechercher" />
+			</div>
+			<div>Covid-19</div>
+			<div>Sports</div>
+			<div>Jeux</div>
 		</div>
 	);
 };

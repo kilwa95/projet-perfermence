@@ -5,8 +5,7 @@ import '../style.css';
 const ArticleTotal = (props) => {
 	return (
 		<div className="article-total">
-			<div>Le nombre Total des articles:</div>
-			<div>4992 résultats</div>
+			<div>Le nombre Total des articles: 4992 résultats</div>
 		</div>
 	);
 };
