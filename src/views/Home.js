@@ -3,6 +3,7 @@ import Menu from '../UI/menu/Menu';
 import ArticleTotal from '../UI/article/ArticleTotal';
 import Container from '../UI/lib/Container';
 import Article from '../UI/article/Article';
+import ArticlesSkeleton from '../UI/article/ArticlesSkeleton';
 
 class Home extends React.Component {
 	constructor(props) {
@@ -69,16 +70,21 @@ class Home extends React.Component {
 				<Menu />
 				<Container>
 					<ArticleTotal count={articles.length} />
-					{articles.map((article) => (
-						<Article
-							title={article.title}
-							description={article.description}
-							name={article.user.name}
-							date={article.date}
-							image={article.image}
-							prix={article.prix}
-						/>
-					))}
+
+					{articles ? (
+						articles.map((article) => (
+							<Article
+								title={article.title}
+								description={article.description}
+								name={article.user.name}
+								date={article.date}
+								image={article.image}
+								prix={article.prix}
+							/>
+						))
+					) : (
+						<ArticlesSkeleton />
+					)}
 				</Container>
 			</React.Fragment>
 		);
