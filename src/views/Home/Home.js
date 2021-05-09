@@ -78,6 +78,7 @@ class Home extends React.Component {
 					{!isFetching ? (
 						articles.map((article) => (
 							<Article
+								type={'article'}
 								title={article.title}
 								description={article.description}
 								name={article.user.name}
