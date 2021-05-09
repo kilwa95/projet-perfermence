@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Home from './views/Home.js';
+import HomeContainer from './views/Home/HomeContainer';
 
 class App extends Component {
 	render() {
@@ -8,8 +8,8 @@ class App extends Component {
 			<HashRouter>
 				<React.Suspense>
 					<Switch>
-						<Route exact path="/" name="Home" component={Home} />
-						<Route exact path="/login" name="login" component={Home} />
+						<Route exact path="/" name="Home" render={(props) => <HomeContainer {...props} />} />
+						<Route path="/login" name="login" component={HomeContainer} />
 					</Switch>
 				</React.Suspense>
 			</HashRouter>

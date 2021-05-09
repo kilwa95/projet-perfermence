@@ -1,9 +1,9 @@
 import React from 'react';
-import Menu from '../UI/menu/Menu';
-import ArticleTotal from '../UI/article/ArticleTotal';
-import Container from '../UI/lib/Container';
-import Article from '../UI/article/Article';
-import ArticlesSkeleton from '../UI/article/ArticlesSkeleton';
+import Menu from '../../UI/menu/Menu';
+import ArticleTotal from '../../UI/article/ArticleTotal';
+import Container from '../../UI/lib/Container';
+import Article from '../../UI/article/Article';
+import ArticlesSkeleton from '../../UI/article/ArticlesSkeleton';
 
 class Home extends React.Component {
 	constructor(props) {
@@ -63,15 +63,19 @@ class Home extends React.Component {
 			]
 		};
 	}
+	componentDidMount() {
+		this.props.fetchCovid();
+	}
 	render() {
 		let { articles } = this.state;
+		let { covid, error, isFetching } = this.props;
 		return (
 			<React.Fragment>
 				<Menu />
 				<Container>
 					<ArticleTotal count={articles.length} />
 
-					{articles ? (
+					{!isFetching ? (
 						articles.map((article) => (
 							<Article
 								title={article.title}
