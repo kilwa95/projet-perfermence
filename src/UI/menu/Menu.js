@@ -1,6 +1,7 @@
 import React from 'react';
 import '../menu/Menu.css';
 import '../style.css';
+import { Link } from 'react-router-dom';
 
 const Menu = (props) => {
 	return (
@@ -11,9 +12,8 @@ const Menu = (props) => {
 			<div>
 				<input className="menu-input" placeholder="Rechercher" />
 			</div>
-			<div>Covid-19</div>
-			<div>Sports</div>
-			<div>Jeux</div>
+			<Link to="/">Covid-19</Link>
+			<Link to="/book">books</Link>
 		</div>
 	);
 };
