@@ -10,7 +10,7 @@ const Article = (props) => {
 						props.type === 'article' ? (
 							props.image
 						) : (
-							'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/447px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg'
+							'https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600,h_518/https://www.pop-pins.com/wp-content/uploads/2018/08/6-photography-books-for-beginners.jpg'
 						)
 					}
 					width="260"
